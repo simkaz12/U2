@@ -29,7 +29,7 @@ if ($acc === false) {
     die;
 }
 
-$title = 'Add Funds';
+$title = 'Withdraw Funds';
 require __DIR__ . '/top.php';
 
 ?>
@@ -37,7 +37,7 @@ require __DIR__ . '/top.php';
 <?php require __DIR__ . '/menu.php' ?>
 <div class="create">
     <form action="<?= URL ?>minus.php?id=<?= $acc['id'] ?>" method="post">
-        <h1>Add Funds</h1>
+        <h1>Withdraw Funds</h1>
         <div class="form-row">
             <div><?= $acc['name'] ?> <?= $acc['last'] ?></div>
             <div><?= $acc['sasId'] ?></div>

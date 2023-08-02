@@ -22,16 +22,16 @@ require __DIR__ . '/top.php';
     <div class="countainer-acc">
         <?php foreach($accounts as $acc) : ?>
             <?php if ($_SESSION['id'] == $acc['id']) : ?>
-                <div >    
+                <div class="form-row">    
                     <div><?= $acc['name'] ?> <?= $acc['last'] ?></div>
                 </div>
-                <div class="sas">
+                <div class="form-row sas">
                     <div><?= $acc['sasId'] ?></div>
                 </div>
-                <div>
+                <div class="form-row">
                     <div>Likutis: <?= $acc['sum'] ?>&euro;</div>
                     <a class="green" href="<?= URL ?>add.php?id=<?= $acc['id'] ?>">Add</a>
-                    <a class="green" href="<?= URL ?>minus.php?id=<?= $acc['id'] ?>">Minus</a>
+                    <a class="green" href="<?= URL ?>remove.php?id=<?= $acc['id'] ?>">Withdraw</a>
                     <a class="red" href="<?= URL ?>delete.php?id=<?= $acc['id'] ?>">Delete</a>
                 </div>
             <?php endif ?>

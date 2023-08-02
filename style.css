@@ -136,12 +136,12 @@ a {
 
 button.red,
 a.red {
-    background-color: crimson;
+    background-color: rgb(147, 35, 57);
 }
 
 button.green,
 a.green {
-    background-color: limegreen;
+    background-color: rgb(69, 135, 69);
 }
 
 .buttons {
@@ -228,4 +228,8 @@ a.green {
 
 .log {
     margin-top: 10px;
+}
+
+.sas {
+    color: #958f8f;
 }

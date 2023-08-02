@@ -9,10 +9,10 @@ if (!isset($_SESSION['login']) || $_SESSION['login'] != 1) {
     die;
 }
 
-if ($_SERVER['REQUEST_METHOD'] != 'POST') {
-    http_response_code(405);    // Method Not Allowed
-    die;
-}
+//if ($_SERVER['REQUEST_METHOD'] != 'POST') {
+ //   http_response_code(405);    // Method Not Allowed
+ //   die;
+//}
 
 if (!isset($_GET['id'])) {
     header('Location: ' . URL . 'login.php');
@@ -34,15 +34,17 @@ if ($sum == '') {
 
 $accounts = json_decode(file_get_contents(__DIR__ . '/accounts.json'), 1);
 
-
-
-
-
 $find = false;
+
 foreach ($accounts as $key => $c) {
     if ($c['id'] == $_GET['id']) {
         $find = true;
-        $suma = $c['sum'] + $sum;
+        $rez = $c['sum'] - $sum;
+        if ($rez > 0) {
+            $suma = $rez;
+        } else {
+            $suma = '0';
+        }
         $accounts[$key] = [
             'id' => $c['id'],
             'name' => $c['name'],
