@@ -41,10 +41,10 @@ require __DIR__ . '/top.php';
         <div class="form-row">
             <div><?= $acc['name'] ?> <?= $acc['last'] ?></div>
             <div><?= $acc['sasId'] ?></div>
-            <div class="form-row">
-                <label for="sum">Amount:</label>
-                <input type="text" name="sum">
-            </div>
+        </div>
+        <div class="form-row">
+            <label for="sum">Amount:</label>
+            <input type="text" name="sum">
         </div>
         <div class="form-row">
             <button class="green" type="submit">Save</button>
