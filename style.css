@@ -57,6 +57,8 @@ nav ul li a:hover {
     line-height: 50px;
     padding: 2px 50px;
     font-size: 25px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .acc {
@@ -213,4 +215,17 @@ a.green {
 
 .login form label {
     width: 80px;
+}
+
+.pasitrauk {
+    margin: 0 50px;
+    color: #958f8f,
+}
+
+.underline {
+    border-bottom: 1px solid #000;
+}
+
+.log {
+    margin-top: 10px;
 }

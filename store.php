@@ -95,6 +95,8 @@ $acc = [
     'sasId' => $sasID,
     'email' => $email,
     'psw' => md5($psw),
+    'sum' => 0,
+    'role' => 1,
 ];
 
 $accounts[] = $acc;

@@ -54,7 +54,7 @@ require __DIR__ . '/top.php';
         <input type="password" name="psw">
     </div>
         <button type="submit" class="blue">Login</button>
-            <a href="<?= URL ?>createNew.php">Create New Account</a>
+            <a class="log" href="<?= URL ?>createNew.php">Create New Account</a>
     </form>
 </div>
 
